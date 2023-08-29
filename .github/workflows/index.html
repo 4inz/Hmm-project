@@ -1,0 +1,94 @@
+<style> 
+  * {
+    
+    margin: 5px;
+    background-color: red;
+  }
+  .container {
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+ 
+  .head {
+    color: white;
+    font-weight: 700;
+  }
+  
+
+  img{
+    width: 15rem;
+  }
+  .tmbl {
+    
+    width: 10rem;
+    transition: 1.5s;
+    font-weight: 900;
+    font-size: medium;
+  }
+  button {
+    background-color: white;
+    color: red;
+    border: 2px crimson;
+    transition: 1s;
+    font-weight: 600;
+    
+    
+  }
+    button:hover{
+    background-color: brown;
+    border: 2px rgb(245, 245, 245);
+    color: white;
+   
+  }
+</style>
+<div class="container">
+
+   <div class="head">
+     <h1>Dirgahayu RI</h1>
+     <br>
+     <br>
+     <p>Hari Kemerdekaan Bangsa Indonesia adalah hari libur nasional di Indonesia untuk memperingati proklamasi kemerdekaan Bangsa Indonesia pada tanggal 17 Agustus 1945.[1] Yang merupakan deklarasi independensi bangsa Indonesia.
+
+      Setiap tanggal 17 Agustus, warga Indonesia merayakan dan mensyukuri peringatan kemerdekaan bangsa Indonesia dengan melakukan upacara bendera serta biasanya diselenggarakan berbagai macam perlombaan, yang populer adalah tarik tambang sambil taunting.
+      
+      Tepatnya pada tanggal 16-nya, presiden Indonesia akan memberikan pidato kenegaraan di Gedung MPR untuk menyambut hari kemerdekaan tersebut.</p>
+    </div>
+      <div class="body">
+     
+     
+    <div class="image">
+     <img src="gmbr/pngtree-logo-of-hut-ri-78th-happy-republic-indonesia-17-august-2023-png-image_7086989.png" >
+      <img src="gmbr/c4379a35b5132628c783dd4240b780be-removebg-preview.png">
+
+    </div>
+    </div>
+
+   <div  class="tmbl">
+    <button id="btn">Rayakan</button>
+    <button id="ntb">Hormati</button>
+   </div>
+  
+</div>
+
+<script>
+  const btn = document.getElementById("btn");
+  let sound = new Audio();
+  sound.src = 'sound/17-agustus-tahun-45.mp3';
+ 
+  const ntb = document.getElementById("ntb");
+  let dnuos = new Audio();
+  dnuos.src = 'sound/Indonesia Raya (3 Stanza) - Lirik Lagu Nasional Indonesia_4TCU2mKmi-U.mp3'
+
+
+  btn.addEventListener("click", function() {
+    sound.play();
+  })
+
+  ntb.addEventListener("click", function() {
+   dnuos.play();
+  })
+</script>
